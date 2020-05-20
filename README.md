@@ -1,22 +1,29 @@
 
 # Secret Searching
 ## Discription:
-this project we are searching and identify sensitive content embedded in code
-seach as AWS secrets (aw secret access key) and private key (RSA private key)
+Search tool for code directories. This tool identifies sensitive content embedded in code. 
+Currently set to search AWS secrets (aw secret access key) and private key (RSA private key) but could be set to search any other sensitive content.
 
 ## Prerequisites
-* Download number of public repos from github
+Python 3.6 , pip , requests.
+
+requests : https://requests.readthedocs.io/en/master/
+
+## Example - Run the script (locally): 
+
+The example is for wolfssh repo (from above) which cotains 3 rsa keys.
+If you would like you can decide which key to look for by sending an appropriate string as the 3rd parameter:
+* private key rsa : rsa_key
+* AW secret - access key : aws_access_key
+
+* Download a public repos from github (example)
 ```
 $ git clone https://github.com/wolfSSL/wolfssh.git
 ```
 
-## Example
-
-* the directory repo of wolfssh (from above) cotains 3 rsa keys
-
-if you run this code from the script path:
+you can run this code from script path:
 ```
-> python FindSecret.py \local_repo_path rsa_key
+> python FindSecret.py /path-to-cloned-project-containning-keys rsa_key
 ```
 
  you will see on your screen all rsa_key in wolfSSL repo (3 rsa keys)
