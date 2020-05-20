@@ -12,7 +12,10 @@ $ git clone https://github.com/wolfSSL/wolfssh.git
 
 ## Example
 
-* the directory repo of wolfssh (from above) cotains 3 rsa keys
+The example is for wolfssh repo (from above) which cotains 3 rsa keys.
+If you would like you can decide which key to look for by sending an appropriate string as the 3rd parameter:
+* private key rsa : rsa_key
+* AW secret - access key : aws_access_key
 
 if you run this code from the script path:
 ```
