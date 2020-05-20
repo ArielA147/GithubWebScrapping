@@ -5,10 +5,7 @@ Search tool for code directories. This tool identifies sensitive content embedde
 Currently set to search AWS secrets (aw secret access key) and private key (RSA private key) but could be set to search any other sensitive content.
 
 ## Prerequisites
-* Download number of public repos from github
-```
-$ git clone https://github.com/wolfSSL/wolfssh.git
-```
+Python 3.6
 
 ## Example
 
@@ -17,9 +14,14 @@ If you would like you can decide which key to look for by sending an appropriate
 * private key rsa : rsa_key
 * AW secret - access key : aws_access_key
 
-if you run this code from the script path:
+* Download a public repos from github (example)
 ```
-> python FindSecret.py \local_repo_path rsa_key
+$ git clone https://github.com/wolfSSL/wolfssh.git
+```
+
+you can run this code from script path:
+```
+> python FindSecret.py /path-to-cloned-project-containning-keys rsa_key
 ```
 
  you will see on your screen all rsa_key in wolfSSL repo (3 rsa keys)
