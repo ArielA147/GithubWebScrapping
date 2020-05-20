@@ -2,6 +2,7 @@ import os
 import re
 import sys
 
+
 ## BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
 
 # the function check if there is aws access key on path and return them
@@ -85,23 +86,21 @@ def files_in_directory_path(path):
 
 ### TESTS
 
-# def general_test(directory, key=None):
-# files_dic = files_in_directory_path(directory)
-# keys = []
-# for path in files_dic:
-#    path_keys = find_key(path)
-#    for cur_key in path_keys:
-#        if not key:
-#            if cur_key == key:
-#                keys.extend(path_keys[cur_key])
-#        else:
-#            keys.extend(cur_key)
-# for key in keys:
-#    print(key)
+def general_test(directory, key):
+    files_dic = files_in_directory_path(directory)
+    keys = []
+    for path in files_dic:
+        path_keys = find_key(path)
+        for cur_key in path_keys:
+            if cur_key == key:
+                keys.extend(path_keys[cur_key])
+
+    for key in keys:
+        print(key)
 
 
-def test1():
-    directory = 'C:\\Users\\User\\Desktop\\cycode\\TEMP'
+def test1(directory):
+    # 'C:\\Users\\User\\Desktop\\cycode\\TEMP'
     files_dic = files_in_directory_path(directory)
     keys = []
 
@@ -114,8 +113,8 @@ def test1():
     print(True) if len(keys) == 2 else print(False)
 
 
-def test2():
-    directory = 'C:\\Users\\User\\Desktop\\cycode\\wolfssh'
+def test2(directory):
+    # 'C:\\Users\\User\\Desktop\\cycode\\wolfssh'
     files_dic = files_in_directory_path(directory)
 
     keys = []
@@ -129,8 +128,8 @@ def test2():
     print(True) if len(keys) == 3 else print(False)
 
 
-def test3():
-    directory = 'C:\\Users\\User\\Desktop\\cycode\\pem-reader'
+def test3(directory):
+    # 'C:\\Users\\User\\Desktop\\cycode\\pem-reader'
     files_dic = files_in_directory_path(directory)
     keys = []
     for path in files_dic:
@@ -141,8 +140,7 @@ def test3():
     print(True) if len(keys) == 1 else print(False)
 
 
-def test4():
-    directory = 'C:\\Users\\User\\Desktop\\cycode'
+def test4(directory):
     files_dic = files_in_directory_path(directory)
     keys = []
 
@@ -154,8 +152,7 @@ def test4():
     print(True) if len(keys) == 6 else print(False)
 
 
-def test5():
-    directory = 'C:\\Users\\User\\Desktop\\cycode\\master-thesis-experiment\\topology'
+def test5(directory):
     files_dic = files_in_directory_path(directory)
     keys = []
     for path in files_dic:
@@ -163,8 +160,6 @@ def test5():
         for cur_key in path_keys:
             if cur_key == "aws_access_key":
                 keys.extend(path_keys[cur_key])
-                print("path - ", path_keys[cur_key], " key - ", key)
-    print(len(keys))
     print(True) if len(keys) == 2 else print(False)
 
 
@@ -186,9 +181,8 @@ def run_tests():
 
 def main():
     # run_tests()
-    # general_test()
-
-    test5()
+    general_test(sys.argv[1], sys.argv[2])
+    test4(sys.argv[1])
 
 
 if __name__ == '__main__':
