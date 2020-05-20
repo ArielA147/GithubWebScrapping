@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="365cae77-6ecc-49ba-bcfe-0bf211562e1e" name="Default Changelist" comment="">
+    <list default="true" id="365cae77-6ecc-49ba-bcfe-0bf211562e1e" name="Default Changelist" comment="update project. fixing flexibility of getting directories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindSecret.py" beforeDir="false" afterPath="$PROJECT_DIR$/FindSecret.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,14 +15,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FindSecret.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-605">
-              <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="10" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#262#942#0" />
                 <element signature="e#1043#2030#0" />
-                <element signature="e#2122#2368#0" />
-                <element signature="e#2492#2742#0" />
                 <element signature="e#3179#3578#0" />
                 <element signature="e#3544#3844#0" />
                 <element signature="e#3847#4192#0" />
@@ -185,7 +181,13 @@
       <option name="presentableId" value="LOCAL‎00002" />
       <updated>1589996694868</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL‎00003" summary="update project. fixing flexibility of getting directories">
+      <created>1589998279398</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1589998279398</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -197,7 +199,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4503546" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4503546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.20390071" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,7 +216,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding json file for all secrets" />
     <MESSAGE value="update project and fixing problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project and fixing problems" />
+    <MESSAGE value="update project. fixing flexibility of getting directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project. fixing flexibility of getting directories" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/regexes.json" />
@@ -261,14 +264,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FindSecret.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-605">
-          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+        <state>
+          <caret selection-end-line="2" selection-end-column="10" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#262#942#0" />
             <element signature="e#1043#2030#0" />
-            <element signature="e#2122#2368#0" />
-            <element signature="e#2492#2742#0" />
             <element signature="e#3179#3578#0" />
             <element signature="e#3544#3844#0" />
             <element signature="e#3847#4192#0" />
