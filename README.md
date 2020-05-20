@@ -1,8 +1,8 @@
 
 # Secret Searching
 ## Discription:
-this project we are searching and identify sensitive content embedded in code
-seach as AWS secrets (aw secret access key) and private key (RSA private key)
+Search tool for code directories. This tool identifies sensitive content embedded in code. 
+Currently set to search AWS secrets (aw secret access key) and private key (RSA private key) but could be set to search any other sensitive content.
 
 ## Prerequisites
 * Download number of public repos from github
