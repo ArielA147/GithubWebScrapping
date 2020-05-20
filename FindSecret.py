@@ -181,9 +181,7 @@ def run_tests():
 
 
 def main():
-    # run_tests()
     general_test(sys.argv[1], sys.argv[2])
-    test4(sys.argv[1])
 
 
 if __name__ == '__main__':
