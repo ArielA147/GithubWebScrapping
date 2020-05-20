@@ -9,7 +9,7 @@ Python 3.6 , pip , requests.
 
 requests : https://requests.readthedocs.io/en/master/
 
-## Example
+## Example - Run the script (locally): 
 
 The example is for wolfssh repo (from above) which cotains 3 rsa keys.
 If you would like you can decide which key to look for by sending an appropriate string as the 3rd parameter:
