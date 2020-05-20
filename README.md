@@ -5,7 +5,9 @@ Search tool for code directories. This tool identifies sensitive content embedde
 Currently set to search AWS secrets (aw secret access key) and private key (RSA private key) but could be set to search any other sensitive content.
 
 ## Prerequisites
-Python 3.6
+Python 3.6 , pip , requests.
+
+requests : https://requests.readthedocs.io/en/master/
 
 ## Example
 
