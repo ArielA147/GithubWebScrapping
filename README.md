@@ -1,7 +1,8 @@
 
 # Secret Searching
 ## Discription:
-Search tool for code directories. This tool identifies sensitive content embedded in code. 
+Search tool for code directories.
+This tool identifies sensitive content embedded in code.
 Currently set to search AWS secrets (aw secret access key) and private key (RSA private key) but could be set to search any other sensitive content.
 
 ## Prerequisites
@@ -9,10 +10,25 @@ Python 3.6 , pip , requests.
 
 requests : https://requests.readthedocs.io/en/master/
 
-## Example - Run the script (locally): 
+## Example -
 
-The example is for wolfssh repo (from above) which cotains 3 rsa keys.
-If you would like you can decide which key to look for by sending an appropriate string as the 3rd parameter:
+###Running with a docker container:
+```
+$ docker build -t webscraper .
+
+$ docker run webscraper
+```
+
+* Please notice that the Dockerfile contains the example repository as the search project.
+In order to clone from a different repository please edit the docker file to contain the url of your chosen repository.
+
+
+###Run the script (locally):
+
+The example is for repository as the search project.
+The repository (from Github) wolfssh repo cotains 3 rsa keys.
+
+You can decide which key you look for by sending an appropriate string as a parameter:
 * private key rsa : rsa_key
 * AW secret - access key : aws_access_key
 
@@ -21,13 +37,14 @@ If you would like you can decide which key to look for by sending an appropriate
 $ git clone https://github.com/wolfSSL/wolfssh.git
 ```
 
-you can run this code from script path:
+* Run this code from script path:
 ```
 > python FindSecret.py /path-to-cloned-project-containning-keys rsa_key
 ```
 
- you will see on your screen all rsa_key in wolfSSL repo (3 rsa keys)
-result:
+ you will see on your screen all rsa_key in wolfSSL repository overall - 3 rsa keys
+
+Result:
 ```
 MIIEowIBAAKCAQEAqg8EVU0VZP8Iz4aKOuvjM7a3N9SrMQ2fpAFdNd/Tx0PsLLnj
 aW2uozZ+aOplExDq8a89CzLAyTgTOwphtPfN5BeIESIoRAqUNK3Izj+gUn21UxPZ
