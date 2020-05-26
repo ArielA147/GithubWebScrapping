@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="365cae77-6ecc-49ba-bcfe-0bf211562e1e" name="Default Changelist" comment="update project. fixing flexibility of getting directories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindSecret.py" beforeDir="false" afterPath="$PROJECT_DIR$/FindSecret.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +16,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FindSecret.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#1043#2030#0" />
-                <element signature="e#3179#3578#0" />
-                <element signature="e#3544#3844#0" />
-                <element signature="e#3847#4192#0" />
-                <element signature="e#4219#4513#0" />
-                <element signature="e#4593#4983#0" />
-                <element signature="e#5152#5275#0" />
+                <element signature="e#22#31#0" expanded="true" />
+                <element signature="e#642#644#0" />
+                <element signature="e#2669#2704#0" />
+                <element signature="e#3527#3921#0" />
+                <element signature="e#3400#3655#0" />
+                <element signature="e#4601#4624#0" />
               </folding>
             </state>
           </provider>
@@ -45,6 +44,10 @@
       <find>AWS</find>
       <find>AKIA[0-9A-Z]{16}</find>
       <find>AKIA</find>
+      <find>re.search</find>
+      <find>findall</find>
+      <find>AP5X67RvyYRrCWBY57cXh2yahPFiqV8pG44HFTA6tSd68GTJ8</find>
+      <find>C:\Users\User\Desktop\cycode\artifactory-user-plugins\build\buildSync\buildSync.json</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,10 +63,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="159" />
-    <option name="y" value="-9" />
-    <option name="width" value="2196" />
-    <option name="height" value="1184" />
+    <option name="x" value="54" />
+    <option name="y" value="-6" />
+    <option name="width" value="1944" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -89,7 +92,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebScraper/FindSecret.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -118,7 +121,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FindSecret.py" />
-      <option name="PARAMETERS" value="C:\Users\User\Desktop\cycode rsa_key" />
+      <option name="PARAMETERS" value="C:\Users\User\Desktop\cycode\artifactory-user-plugins aws_secret_key" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -194,13 +197,13 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2652899" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2652899" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4503546" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.20390071" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37411347" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.108156025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -219,18 +222,20 @@
     <MESSAGE value="update project. fixing flexibility of getting directories" />
     <option name="LAST_COMMIT_MESSAGE" value="update project. fixing flexibility of getting directories" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FindSecret.py</url>
+          <line>95</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/regexes.json" />
-    <entry file="file://$PROJECT_DIR$/Rules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Rules.py" />
     <entry file="file://C:/Program Files (x86)/Python36-32/Lib/tokenize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -257,24 +262,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/regexes.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="48">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/sre_parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="825" column="38" lean-forward="true" selection-start-line="825" selection-start-column="38" selection-end-line="825" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FindSecret.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#1043#2030#0" />
-            <element signature="e#3179#3578#0" />
-            <element signature="e#3544#3844#0" />
-            <element signature="e#3847#4192#0" />
-            <element signature="e#4219#4513#0" />
-            <element signature="e#4593#4983#0" />
-            <element signature="e#5152#5275#0" />
+            <element signature="e#22#31#0" expanded="true" />
+            <element signature="e#642#644#0" />
+            <element signature="e#2669#2704#0" />
+            <element signature="e#3527#3921#0" />
+            <element signature="e#3400#3655#0" />
+            <element signature="e#4601#4624#0" />
           </folding>
         </state>
       </provider>
