@@ -3,16 +3,24 @@ import os
 import re
 import sys
 
-
 ## BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+
+rsa_pk_begin = r'-{3,}\bBEGIN RSA PRIVATE KEY-{3,}'
+rsa_pk_end = r'-{3,}\bEND RSA PRIVATE KEY-{3,}'
+
+# 40-character, base-64 strings that don’t have any base 64 characters immediately before or after.
+aws_access_key_patten = r'(?<![A-Za-z0-9/+=])[A-Za-z0-9/+=]{40}(?![A-Za-z0-9/+=])'
+
+keys_dict = {}  # dict {key_type : {file: key}}
+
 
 # the function check if there is aws access key on path and return them
 def check_aws_access_key(path):
     aws_keys = set()
 
-    aws_access_key_patten = r'AKIA[0-9A-Z]{16}'
     # 40-character, base-64 strings that don’t have any base 64 characters immediately before or after.
-    # r'(?<![A-Za-z0-9/+=])[A-Za-z0-9/+=]{40}(?![A-Za-z0-9/+=])'
+
+    aws_access_key_patten = r'(?<![A-Za-z0-9/+=])[A-Za-z0-9/+=]{40}(?![A-Za-z0-9/+=])'
 
     with open(path, encoding="ascii", errors="surrogateescape") as fil:
         try:
@@ -74,12 +82,44 @@ def find_key(path):
     return keys
 
 
+# @param path: the path of the file
+# @param key: the type of key we are searching
+# @param regex: the regex of the key
+def find_match_key(path, regex):
+    with open(path, encoding="ascii", errors="surrogateescape") as fil:
+        try:
+            file_data = fil.readlines()
+
+            for line in file_data:
+                match = re.search(regex, line)
+                if match:
+                    file_path = path
+                    keys_dict[path] = "match"
+
+            fil.close()
+        except():
+            print("there was a problem with the file")
+
+
+# keys_dict[key]=find_match_key(path,rsa_pk_begin)
+
+def is_file_potential(filename):
+    auto_files_list = ['binary', 'exe', 'gitignore']  # type of files which we wont want to check
+
+    for t in auto_files_list:
+        if filename.endswith("." + t):
+            return False
+    else:
+        return True
+
+
 # the function returns a dictionary of all files in directory path
 def files_in_directory_path(path):
     files_path = []
     for (dirpath, dirnames, filenames) in os.walk(path):
         for filename in filenames:
-            if not filename.endswith('.gitignore'):
+            if is_file_potential(filename):
+                # if not filename.endswith('.gitignore'):
                 files_path.append(os.sep.join([dirpath, filename]))
 
     return files_path
