@@ -9,9 +9,10 @@ regex_dict = {
     'aws_secret_key': r'(?i)aws(.{0,20})?(?-i)[\'\"][0-9a-zA-Z\/+]{40}[\'\"]',
     'aws_access_key': r'(?<![A-Za-z0-9/+=])[A-Za-z0-9/+=]{40}(?![A-Za-z0-9/+=])',
     'artifactory_password': r'(?:\s|=|:|"|^)AP[\dABCDEF][a-zA-Z0-9]{8,}',
-    'artifacatory_token': r'(?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}'
+    'artifactory_token': r'(?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}'
 }
 keys_dict = {}  # dict {key_type : {file: key}}
+
 
 #
 # # the function check if there is aws access key on path and return them
@@ -84,30 +85,35 @@ keys_dict = {}  # dict {key_type : {file: key}}
 
 # @param path: the path of the file
 # @param regex: the regex of the key
+
+# the function search the regex in the file
 def find_match_key(path, regex):
-    dict_match = {}
+    dict_match = {}  # {path : [keys]}
 
     with open(path, encoding="ascii", errors="surrogateescape") as fil:
-        lst = []
+        lst_keys = []
         try:
             file_data = fil.readlines()
 
             for line in file_data:
                 match = re.search(regex, line)
                 if match:
-                    lst.append(match.group().split('\"')[1])
+                    if "\"" in match.group():
+                        lst_keys.append(match.group().split('\"')[1])
+                    else:
+                        lst_keys.append(match.group())
 
-            if lst:
-                dict_match[path] = lst
+            if lst_keys:
+                dict_match[path] = lst_keys
             fil.close()
             return dict_match
         except():
             print("there was a problem with the file")
 
 
-# checking if the file is potential of containing a key (return True) or not (return False).
+# the function return True if if the file is potential of containing a key else return False.
 def is_file_potential(filename):
-    # list of types of files which we wont want to go over and check
+    # list of types of files which we wont want to go over and check - cause they not created by the programmer
     files_types_list = ['binary', 'exe', 'out', 'jar', 'class' 'nupkg', 'png', 'jpeg', 'rpm', 'bz2', 'gz', 'whl', 'zip',
                         'arr', 'war']  # type of files which we wont want to check
 
@@ -118,7 +124,7 @@ def is_file_potential(filename):
         return True
 
 
-# the function returns a dictionary of all files in directory path
+# the function returns a list of all files in directory path
 def files_in_directory_path(path):
     files_path = []
     for (dirpath, dirnames, filenames) in os.walk(path):
@@ -138,6 +144,7 @@ def general_test(directory, key):
         if dict_found_keys:
             for cur_file, cur_key in dict_found_keys.items():
                 print("the file is : ", cur_file, " the key is : ", cur_key)
+
 
 # def test1(directory):
 #     # 'C:\\Users\\User\\Desktop\\cycode\\TEMP'
@@ -220,7 +227,7 @@ def general_test(directory, key):
 
 
 def main():
-    print("you are searching for : ", sys.argv[2] , " in this path : ", sys.argv[1])
+    print("you are searching for : ", sys.argv[2], " in this path : ", sys.argv[1])
     print()
     general_test(sys.argv[1], sys.argv[2])
     print()

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365cae77-6ecc-49ba-bcfe-0bf211562e1e" name="Default Changelist" comment="update project. fixing flexibility of getting directories">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FindSecret.py" beforeDir="false" afterPath="$PROJECT_DIR$/FindSecret.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,13 +15,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FindSecret.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="176">
+              <caret line="115" column="111" selection-start-line="115" selection-start-column="111" selection-end-line="115" selection-end-column="111" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
                 <element signature="e#642#644#0" />
                 <element signature="e#2669#2704#0" />
-                <element signature="e#3527#3921#0" />
                 <element signature="e#3400#3655#0" />
                 <element signature="e#4601#4624#0" />
               </folding>
@@ -46,8 +44,8 @@
       <find>AKIA</find>
       <find>re.search</find>
       <find>findall</find>
-      <find>AP5X67RvyYRrCWBY57cXh2yahPFiqV8pG44HFTA6tSd68GTJ8</find>
       <find>C:\Users\User\Desktop\cycode\artifactory-user-plugins\build\buildSync\buildSync.json</find>
+      <find>AP5X67RvyYRrCWBY57cXh2yahPFiqV8pG44HFTA6tSd68GTJ8</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,8 +200,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37411347" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.108156025" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.94148934" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6152482" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -221,17 +219,6 @@
     <MESSAGE value="update project and fixing problems" />
     <MESSAGE value="update project. fixing flexibility of getting directories" />
     <option name="LAST_COMMIT_MESSAGE" value="update project. fixing flexibility of getting directories" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/FindSecret.py</url>
-          <line>95</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/regexes.json" />
@@ -276,13 +263,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FindSecret.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="176">
+          <caret line="115" column="111" selection-start-line="115" selection-start-column="111" selection-end-line="115" selection-end-column="111" />
           <folding>
             <element signature="e#22#31#0" expanded="true" />
             <element signature="e#642#644#0" />
             <element signature="e#2669#2704#0" />
-            <element signature="e#3527#3921#0" />
             <element signature="e#3400#3655#0" />
             <element signature="e#4601#4624#0" />
           </folding>
