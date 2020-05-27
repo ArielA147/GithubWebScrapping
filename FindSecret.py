@@ -14,9 +14,6 @@ regex_dict = {
     'artifactory_token': r'(?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}',
 
     'aws_secret_key': r'aws(.{0,20})?[\'\"][0-9a-zA-Z\/+]{40}[\'\"]',
-    # ########          (?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\\//+]{40}['\"]")
-    ################    (?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]
-    ################    (?i)aws(.{0,20})?(?-i)[0-9a-zA-Z\/+]{40}
 }
 
 
@@ -110,7 +107,7 @@ def general_test(directory, key):
         dict_found_keys = find_match_key(path, regex_dict[key])  # find_key(path)
         if dict_found_keys:
             for cur_file, cur_key in dict_found_keys.items():
-                print("the file is : ", cur_file, " the len is ", len(cur_key), " the key is : ", cur_key)
+                print("the file is: ", cur_file, " there are ", len(cur_key), " keys: ", cur_key)
 
 
 def main():
