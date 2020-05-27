@@ -14,7 +14,7 @@ requests : https://requests.readthedocs.io/en/master/
 
 ## Example -
 
-###Running with a docker container:
+### Running with a docker container:
 ```
 $ docker build -t webscraper .
 
@@ -25,7 +25,7 @@ $ docker run webscraper
 In order to clone from a different repository please edit the docker file to contain the url of your chosen repository.
 
 
-###Run the script (locally):
+### Run the script (locally):
 
 The example is for repository as the search project.
 The repository (from Github) artifactory-user-plugins repo cotains 9 artifactory tokens.
