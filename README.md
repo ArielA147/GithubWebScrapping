@@ -3,7 +3,7 @@
 ## Discription:
 Search tool for code directories.
 This tool identifies sensitive content embedded in code.
-Currently set to search AWS secrets (aw secret access key) and private key (RSA private key) but could be set to search any other sensitive content.
+Currently set to search AWS secrets (aw secret access key), private key (RSA private key), artifactory token and password but could be set to search any other sensitive content.
 
 - More example for different secrets REGEX can be found in regexes.json
 
