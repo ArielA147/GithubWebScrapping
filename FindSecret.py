@@ -46,7 +46,7 @@ def is_file_potential(filename):
 
 
 # the function returns how much word is randomize (0 - not random & easy to guss, >=4.5 random word)
-def shannon_furmola(word):
+def shannon_formula(word):
     stList = list(word)
     alphabet = list(set(stList))  # list of symbols in the string
 
@@ -82,7 +82,7 @@ def find_match_key(path, regex):
                 if found_rsa_begin:
                     if re.search(regex_dict["rsa_key_end"], line):
                         break
-                    if shannon_furmola(line) >= SHANONN_UPPER_LIMIT:
+                    if shannon_formula(line) >= SHANONN_UPPER_LIMIT:
                         lst_keys.append(line)
 
                 elif match:
@@ -91,7 +91,7 @@ def find_match_key(path, regex):
                         continue
 
                     token = match.group()
-                    if shannon_furmola(token) >= SHANONN_UPPER_LIMIT:
+                    if shannon_formula(token) >= SHANONN_UPPER_LIMIT:
                         if "\"" in token:
                             lst_keys.append(token.split('\"')[1])
                         else:
@@ -114,7 +114,7 @@ def general_test(directory, key):
             for cur_file, cur_key in dict_found_keys.items():
                 print("the file is : ", cur_file, " the len is ", len(cur_key),  " the key is : ", cur_key)
                 for k in cur_key:
-                    print(shannon_furmola(k))
+                    print(shannon_formula(k))
 
 
 def main():
