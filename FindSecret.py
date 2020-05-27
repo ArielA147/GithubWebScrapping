@@ -103,15 +103,13 @@ def find_match_key(path, regex):
             print("there was a problem with the file")
 
 
-### TESTS
-
 def general_test(directory, key):
     files_dic = files_in_directory_path(directory)
     for path in files_dic:
         dict_found_keys = find_match_key(path, regex_dict[key])  # find_key(path)
         if dict_found_keys:
             for cur_file, cur_key in dict_found_keys.items():
-                print("the file is : ", cur_file, " the len is ", len(cur_key),  " the key is : ", cur_key)
+                print("the file is : ", cur_file, " the len is ", len(cur_key), " the key is : ", cur_key)
 
 
 def main():
