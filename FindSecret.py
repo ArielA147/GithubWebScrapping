@@ -14,9 +14,9 @@ regex_dict = {
     'artifactory_token': r'(?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}',
 
     'aws_secret_key': r'(?i)aws(.{0,20})?(?-i)[\'\"][0-9a-zA-Z\/+]{40}[\'\"]',
-    #####################   (?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]
-    #####################   (?i)aws(.{0,20})?(?-i)[0-9a-zA-Z\/+]{40}
     # ########          (?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\\//+]{40}['\"]")
+    ################    (?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]
+    ################    (?i)aws(.{0,20})?(?-i)[0-9a-zA-Z\/+]{40}
 }
 
 
@@ -68,15 +68,14 @@ def shannon_formula(word):
 
 
 def find_match_key(path, regex):
-    dict_match = {}  # {path : [keys]}
+    dict_match = {}  # dict format {path : [keys]}
 
     with open(path, encoding="ascii", errors="surrogateescape") as fil:
         lst_keys = []
         found_rsa_begin = False
 
         try:
-            file_data = fil.readlines()
-            for line in file_data:
+            for line in fil.readlines():
                 match = re.search(regex, line)
 
                 if found_rsa_begin:
@@ -113,15 +112,11 @@ def general_test(directory, key):
         if dict_found_keys:
             for cur_file, cur_key in dict_found_keys.items():
                 print("the file is : ", cur_file, " the len is ", len(cur_key),  " the key is : ", cur_key)
-                for k in cur_key:
-                    print(shannon_formula(k))
 
 
 def main():
     print("you are searching for : ", sys.argv[2], " in this path : ", sys.argv[1])
-    print()
     general_test(sys.argv[1], sys.argv[2])
-    print()
     print("~DONE~")
 
 
