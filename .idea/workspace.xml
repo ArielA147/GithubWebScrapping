@@ -15,32 +15,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FindSecret.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="103" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="159">
+              <caret line="105" column="33" lean-forward="true" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
                 <element signature="e#921#1163#0" />
                 <element signature="e#3841#4288#0" />
                 <element signature="e#2920#3397#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/Python36-32/Lib/re.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="300" selection-start-line="300" selection-end-line="300" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/Python36-32/Lib/sre_compile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="561" selection-start-line="561" selection-end-line="561" />
             </state>
           </provider>
         </entry>
@@ -146,7 +128,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FindSecret.py" />
-      <option name="PARAMETERS" value="C:\Users\User\Desktop\cycode\artifactory-user-plugins aws_secret_key" />
+      <option name="PARAMETERS" value="C:\Users\User\Desktop\cycode\artifactory-user-plugins rsa_key" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -328,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FindSecret.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="159">
+          <caret line="105" column="33" lean-forward="true" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
           <folding>
             <element signature="e#22#31#0" expanded="true" />
             <element signature="e#921#1163#0" />

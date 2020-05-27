@@ -13,7 +13,7 @@ regex_dict = {
     'artifactory_password': r'(?:\s|=|:|"|^)AP[\dABCDEF][a-zA-Z0-9]{8,}',
     'artifactory_token': r'(?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}',
 
-    'aws_secret_key': r'(?i)aws(.{0,20})?(?-i)[\'\"][0-9a-zA-Z\/+]{40}[\'\"]',
+    'aws_secret_key': r'aws(.{0,20})?[\'\"][0-9a-zA-Z\/+]{40}[\'\"]',
     # ########          (?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\\//+]{40}['\"]")
     ################    (?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]
     ################    (?i)aws(.{0,20})?(?-i)[0-9a-zA-Z\/+]{40}
@@ -76,7 +76,7 @@ def find_match_key(path, regex):
 
         try:
             for line in fil.readlines():
-                match = re.search(regex, line)
+                match = re.search(regex, line, re.IGNORECASE)
 
                 if found_rsa_begin:
                     if re.search(regex_dict["rsa_key_end"], line):
@@ -104,6 +104,7 @@ def find_match_key(path, regex):
 
 
 def general_test(directory, key):
+    print("you are searching for : ", key, " in this path : ", directory)
     files_dic = files_in_directory_path(directory)
     for path in files_dic:
         dict_found_keys = find_match_key(path, regex_dict[key])  # find_key(path)
@@ -113,9 +114,7 @@ def general_test(directory, key):
 
 
 def main():
-    print("you are searching for : ", sys.argv[2], " in this path : ", sys.argv[1])
     general_test(sys.argv[1], sys.argv[2])
-    print("~DONE~")
 
 
 if __name__ == '__main__':
