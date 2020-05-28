@@ -107,7 +107,7 @@ def general_test(directory, key):
         dict_found_keys = find_match_key(path, regex_dict[key])  # find_key(path)
         if dict_found_keys:
             for cur_file, cur_key in dict_found_keys.items():
-                print("the file is: ", cur_file, " there are ", len(cur_key), " keys: ", cur_key)
+                print("the file is: ", cur_file, " keys: ", cur_key)
 
 
 def main():
