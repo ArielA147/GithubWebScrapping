@@ -54,10 +54,28 @@ $ git clone https://github.com/jfrog/artifactory-user-plugins.git
 Result:
 ```
 you are searching for :  artifactory_token  in this path :  ~\artifactory-user-plugins
-the file is:  ~\artifactory-user-plugins\build\buildSync\buildSync.json  there are  3  keys:  ['AKCp2UNCd8uK7hQoxZnszftnogpgLcjo2EVFaFE4PGtRHnAcBHr43H7nJmWb4JhVUqBwa2iwX', 'AKCp2UNCd7wqJLNMF7teKBWL7MeWRBuXLQRWQ2cxrCw6WbEHZrjVXYP6HyDoLYHTxqiSgbirQ', 'AKCp2UNCd7xAH5guHik92Ctdtdxw4utwkfsdcTPxxNNiD1UwdB8ft44yHwk4AmpHdM7uVkYzy']
-the file is:  ~\artifactory-user-plugins\security\oldPasswordRealm\oldPasswordRealm.json  there are  3  keys:  ['AKCp2UNCd8uK7hQoxZnszftnogpgLcjo2EVFaFE4PGtRHnAcBHr43H7nJmWb4JhVUqBwa2iwX', 'AKCp2UNCd7wqJLNMF7teKBWL7MeWRBuXLQRWQ2cxrCw6WbEHZrjVXYP6HyDoLYHTxqiSgbirQ', 'AKCp2UNCd7xAH5guHik92Ctdtdxw4utwkfsdcTPxxNNiD1UwdB8ft44yHwk4AmpHdM7uVkYzy']
-the file is:  ~\artifactory-user-plugins\security\securityReplication\test\sec1-56.json  there are  1  keys:  ['AKCp2V77CZw9VKd8J97FttrGpxqcPcpKwZxrf9zcwhaeAV9oSLrT14m9qLH2msUbRbJssQ6iz']
-the file is:  ~\artifactory-user-plugins\security\securityReplication\test\sec1.json  there are  1  keys:  ['AKCp2V77CZw9VKd8J97FttrGpxqcPcpKwZxrf9zcwhaeAV9oSLrT14m9qLH2msUbRbJssQ6iz']
-the file is:  ~\artifactory-user-plugins\security\securityReplication\test\sec1old.json  there are  1  keys:  ['AKCp2V77CZw9VKd8J97FttrGpxqcPcpKwZxrf9zcwhaeAV9oSLrT14m9qLH2msUbRbJssQ6iz']
+the file is:  ~\artifactory-user-plugins\build\buildSync\buildSync.json  there are  
+the  keys are:  
+AKCp2UNCd8uK7hQoxZnszftnogpgLcjo2EVFaFE4PGtRHnAcBHr43H7nJmWb4JhVUqBwa2iwX
+AKCp2UNCd7wqJLNMF7teKBWL7MeWRBuXLQRWQ2cxrCw6WbEHZrjVXYP6HyDoLYHTxqiSgbirQ
+AKCp2UNCd7xAH5guHik92Ctdtdxw4utwkfsdcTPxxNNiD1UwdB8ft44yHwk4AmpHdM7uVkYzy
+
+the file is:  ~\artifactory-user-plugins\security\oldPasswordRealm\oldPasswordRealm.json  
+the  keys are:
+AKCp2UNCd8uK7hQoxZnszftnogpgLcjo2EVFaFE4PGtRHnAcBHr43H7nJmWb4JhVUqBwa2iwX
+AKCp2UNCd7wqJLNMF7teKBWL7MeWRBuXLQRWQ2cxrCw6WbEHZrjVXYP6HyDoLYHTxqiSgbirQ
+AKCp2UNCd7xAH5guHik92Ctdtdxw4utwkfsdcTPxxNNiD1UwdB8ft44yHwk4AmpHdM7uVkYzy
+
+the file is:  ~\artifactory-user-plugins\security\securityReplication\test\sec1-56.json  
+the  keys are:
+AKCp2V77CZw9VKd8J97FttrGpxqcPcpKwZxrf9zcwhaeAV9oSLrT14m9qLH2msUbRbJssQ6iz
+
+the file is:  ~\artifactory-user-plugins\security\securityReplication\test\sec1.json  
+the  keys are: 
+AKCp2V77CZw9VKd8J97FttrGpxqcPcpKwZxrf9zcwhaeAV9oSLrT14m9qLH2msUbRbJssQ6iz
+
+the file is:  ~\artifactory-user-plugins\security\securityReplication\test\sec1old.json  
+the  keys are:
+AKCp2V77CZw9VKd8J97FttrGpxqcPcpKwZxrf9zcwhaeAV9oSLrT14m9qLH2msUbRbJssQ6iz
 
 ```
